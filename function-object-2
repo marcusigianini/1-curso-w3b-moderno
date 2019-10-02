@@ -1,0 +1,34 @@
+function aluno(nome,prontuario,nota){
+  this.nome = nome
+  this.prontuario = prontuario
+  this.nota = nota //atributos
+
+  this.calcularNota = function(notaParaCalculo){
+    if(notaParaCalculo>=6)
+    return 'Aprovado'
+    else if(notaParaCalculo>=4)
+    return 'Pendente para Conselho'
+    else 
+    return 'Reprovado'
+  } //método é independente dos atributos :(
+
+  if(nota>=6)
+    this.status = 'Aprovado'
+    else if(nota>=4)
+    this.status = 'Pendente para Conselho'
+    else 
+    this.status = 'Reprovado' //consegui fazer um "método" que calcula o status, mas não é function que nem eu queria
+
+}
+
+let aluno1 = new aluno('Marcus',1750721,8.5)
+let aluno2 = new aluno('João',1750704,5.00)
+let aluno3 = new aluno('Victor',1750873,2.5)
+
+console.log(aluno1) //mostra o objeto com atributos expostos, menos função
+
+console.log(aluno1.calcularNota(8.5)) //consigo usar o método, mas preciso digitar o parâmetro de entrada
+
+console.log(aluno1.status)
+console.log(aluno2.status)
+console.log(aluno3.status) //consigo saber o status sem entrar com nenhum valor que já não tenha sido definido, que nem eu queria originalmente com o método calcularNota()
