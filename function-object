@@ -1,0 +1,13 @@
+function aluno(nome,idade,id){
+  this.nome = nome
+  this.idade = idade
+  this.id = id
+}
+
+let aluno1 = new aluno('Marcus',17,01)
+let aluno2 = new aluno('Duda',18,02)
+let aluno3 = new aluno('Silvio',17,03)
+
+console.log(`${aluno1.nome}
+${aluno2.idade}
+${aluno3.id}`)
