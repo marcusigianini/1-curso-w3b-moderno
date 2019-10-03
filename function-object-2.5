@@ -1,0 +1,32 @@
+function aluno(nome,prontuario,nota){
+  this.nome = nome
+  this.prontuario = prontuario
+  this.nota = nota //atributos
+
+  this.calcularNota = function(){
+    if(this.nota>=6)
+    return 'Aprovado'
+    else if(this.nota>=4)
+    return 'Pendente para Conselho'
+    else if(this.nota>=0)
+    return 'Reprovado'
+    else
+    return 'Nota inválida!'
+  } //método se utiliza dos atributos definidos na própria function através do .this e sem parâmetros
+}
+
+//instanciação de 3 objetos
+let aluno1 = new aluno('Marcus',1750721,8.5)
+let aluno2 = new aluno('João',1750704,5.00)
+let aluno3 = new aluno('Victor',1750873,2.5)
+
+//teste de atributos
+console.log(aluno1.nome) 
+console.log(aluno2.prontuario) 
+console.log(aluno3.nota)
+
+//teste do método nos 3 objetos de aluno, para calcular nota e dar o status dos menino
+console.log(` 
+O aluno ${aluno1.nome} está ${aluno1.calcularNota()}`)
+console.log(`O aluno ${aluno2.nome} está ${aluno2.calcularNota()}`)
+console.log(`O aluno ${aluno3.nome} está ${aluno3.calcularNota()}`)
