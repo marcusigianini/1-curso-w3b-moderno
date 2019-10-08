@@ -1,0 +1,12 @@
+function imprimirNome(obj){
+    try{
+      console.log(`Seu nome é ${obj.nombre.toUppercase()}`)
+    } catch(e){
+      throw `Nome do Erro: ${e.name}
+Descrição: ${e.message}
+Data do erro: ${new Date()}`
+    }
+  }
+  
+  let pessoa = {nome:'Marcus'}
+  imprimirNome(pessoa)
