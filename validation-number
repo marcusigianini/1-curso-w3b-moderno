@@ -1,0 +1,9 @@
+function validarNumero(num){
+  if(typeof num !== 'number')
+  console.log('não é número')
+  else
+  console.log('é número')
+}
+
+validarNumero(123) //É número
+validarNumero('4') //Não é número
