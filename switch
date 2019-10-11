@@ -1,0 +1,21 @@
+function aperteUmaTecla(op){
+     switch(Math.floor(op)){
+        case 0: case 1: 
+        console.log('Receber promoções da operadora')
+        break
+        case 2: 
+        console.log('Falar com algum atendente')
+        break
+        case 3:
+        console.log('Ouvir a mensagem da caixa postal')
+        break
+        default:
+        console.log('Sair da chamada')
+     }
+} //estrutura padrão de um switch
+
+aperteUmaTecla(0)
+aperteUmaTecla(1) // 0 e 1 dão na mesma opção
+aperteUmaTecla(2)
+aperteUmaTecla(3)
+aperteUmaTecla(4)
