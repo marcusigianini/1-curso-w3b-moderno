@@ -1,0 +1,23 @@
+Number.prototype.isBetween = function(inicio,fim){
+  let sera = this>=inicio && this<=fim
+  return sera
+} //Método que qualquer número pode chamar, para saber se está entre o número de entrada e saída(true ou false)
+
+let imprimirResultado = function(nota){
+  if(nota.isBetween(9,10))
+  console.log('God')
+  else if(nota.isBetween(6,8.99))
+  console.log('Aprovado')
+  else if(nota.isBetween(4,5.99))
+  console.log('Rec')
+  else if(nota.isBetween(0,3.99))
+  console.log('Sifu')
+  else {
+    console.log('Nota inválida')
+  }
+} //Método normal que recebe um número, e retorna uma situação, se utilizando do método anterior para saber se um número está entre certos dois números
+
+imprimirResultado(9.5)
+imprimirResultado(7.86)
+imprimirResultado(5.96)
+imprimirResultado(2.75)
