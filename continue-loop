@@ -1,0 +1,11 @@
+let x=0
+
+while(x<5){
+  if(x==2) continue
+  console.log(x)
+  x++
+}
+/*Há um looping, pois a o avanço nas repetições do while
+  dependem diretamente da leitura completa do código, que possui o incremento.
+  A partir do momento que o continue passa para a próxima repetição sem incrementar,
+  há um looping*/ 
