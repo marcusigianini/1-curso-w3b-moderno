@@ -1,0 +1,24 @@
+/*for(let x=1;x<=10;x++){
+  for(let y=1;y<=10;y++){
+    console.log(`${x},${y}`)
+  }
+}*/
+//exemplo de 'matriz' de números, 100 pares no total
+
+/*for(let x=1;x<=10;x++){
+  for(let y=1;y<=10;y++){
+    if(x==8&&y==3)
+    break
+    console.log(`${x},${y}`)
+  }
+}*/
+//break interrompe o par '8,3' e sai de um for, para cair no outro for e continuar até '10,10'
+
+externo: for(let x=1;x<=10;x++){
+  for(let y=1;y<=10;y++){
+    if(x==8&&y==3)
+    break externo
+    console.log(`${x},${y}`)
+  }
+}
+//break interrompe os dois for ao referenciar o rótulo 'externo'
