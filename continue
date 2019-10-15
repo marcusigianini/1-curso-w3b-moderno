@@ -1,0 +1,15 @@
+for(let x=1;x<=5;x++){
+  if(x==2)
+  continue //pula repetição específica com: continue
+  console.log(x)
+}
+
+console.log('') //pula linha no console
+
+for(let x=1;x<=5;x++){
+  if(x==2);
+  else //pula repetição específica com: if vazio e else
+  console.log(x)
+}
+
+//No final, as duas técnicas dizem: 'não faz nada, pula pra próxima'
